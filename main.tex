@@ -1,0 +1,96 @@
+\documentclass[10pt,conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\IEEEpubid{\makebox[\columnwidth]{978-1-7281-5127-4/20/\$31.00~\copyright{}2020 IEEE \hfill} \hspace{\columnsep}\makebox[\columnwidth]{ }}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{url}
+
+\newcommand{\notedm}[1]{\textcolor{red}{Daniele: #1}}
+\newcommand{\notect}[1]{\textcolor{violet}{Cedric: #1}}
+\newcommand{\notedb}[1]{\textcolor{gray}{Davaa: #1}}
+
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+
+\title{FogGuru: a Fog Computing platform based on Apache Flink\\}
+
+\author{\IEEEauthorblockN{Davaadorj Battulga}
+\IEEEauthorblockA{\textit{U-Hopper, Univ Rennes, Inria, CNRS, IRISA}\\
+davaadorj.battulga@u-hopper.com}
+\and
+
+\IEEEauthorblockN{Daniele Miorandi}
+\IEEEauthorblockA{\textit{U-Hopper}\\
+daniele.miorandi@u-hopper.com}
+\and
+
+\IEEEauthorblockN{C\'{e}dric Tedeschi}
+\IEEEauthorblockA{\textit{Univ Rennes, Inria, CNRS, IRISA}\\
+cedric.tedeschi@inria.fr}
+}
+
+\maketitle
+
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+
+
+\begin{IEEEkeywords}
+Fog Computing, Edge Computing, Apache Flink
+\end{IEEEkeywords}
+
+
+%%%%%%%%%%%% Introduction %%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{sec:introduction}
+\input{introduction}
+
+
+%%%%%%%%%%%% Design and Technology %%%%%%%%%%%%%%%%
+\section{Design and Technology}
+\label{sec:Technology and Design}
+\input{techanddesign}
+
+
+%%%%%%%%%%%% Implementation %%%%%%%%%%%%%%%%
+\section{Implementation}
+\label{sec:implementation}
+\input{implementation}
+
+
+%%%%%%%%%%%% Demonstration %%%%%%%%%%%%%%%%
+\section{Demonstration}
+\label{sec:demonstration}
+\input{demonstration}
+
+
+%%%%%%%%%%%% Conclusion and future work %%%%%%%%%%%%%%%%
+\section{Conclusion and future work}
+\label{sec:conclusion}
+\input{conclusion}
+
+\section*{Acknowledgements}
+
+{\small This work is part of the FogGuru project which has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Sk\l odowska-Curie grant 765452. The information and views set out
+in this publication are those of the author(s) and do not necessarily reflect the official opinion of the European Union. Neither the European Union institutions and bodies nor any person acting on their behalf
+may be held responsible for the use which may be made
+of the information contained therein.}
+
+{\small The authors thank G. Pierre and colleagues from INRIA in University of Rennes 1
+  for assembling the Raspberry Pi cluster.}
+
+% {\small This work is also demonstrated in Flink Forward Berlin in October 2019.}
+
+\bibliographystyle{IEEEtran}
+\bibliography{main}
+
+
+\end{document}

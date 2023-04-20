@@ -1,0 +1,34 @@
+Fog Computing is an architectural approach for building computing infrastructure
+meant to best support Internet-of-Things (IoT) applications and services. The
+main idea behind fog computing is to enhance the performance of traditional
+cloud computing applications by deploying computing
+resources closer to end-users and data sources. Potential benefits include
+reduced latency, bandwidth optimization, privacy and security, lower energy
+consumption, and reduced dependency on
+cloud providers. According to the OpenFog reference
+architecture~\cite{openfogRA}, the key technical challenges in the maturation of
+Fog Computing are scalability, autonomy, and programmability. Fog Computing
+could enable highly adaptive deployments of services, including support for
+programming at the software and hardware layers. 
+
+A challenge stands in the fact that Fog Computing platforms will include both
+computing resources at the edge and in more traditional Clouds. Operating a Fog
+that gathers heterogeneous, geo-distributed nodes has been only very recently
+addressed~\cite{fogdeploy} and is still a largely open problem. This work focus
+on Fog nodes located at the edge of the network.
+
+Re-tasking a fog node or cluster of nodes for accommodating operational dynamics
+addressing rapidly changing requirements can be automated. However, this is
+hindered by the lack of common models for programming fog nodes; as of today,
+most fog deployments require a lot of manual intervention and use solutions for
+specific use cases.
+
+%\notedb{The problem is that Fog lacks programmability, there are a number of
+%fog deployments, but they all require developers to have deep tech knowledge
+%and designed for only one specific use case. What's a good way to express
+%this?}
+
+In this work, we aimed to design and develop a Fog platform, called FogGuru, for facilitating the development and deployment of Fog applications. Our approach is based upon the usage of a stream processing architecture for elaborating data from the IoT tier on the fog node (including operations such as aggregation and filtering). The prototype we built makes use of the real-time Stream Processing Engine (SPE) Apache Flink, which is provided as an image ready to be deployed on resource-constrained devices. We further provide support for automating the service deployment procedure (on both single nodes as well as clusters) and demonstrate its usage on a traffic analysis scenario.
+
+The rest of the paper is organized as follows. Section II
+presents the platform design and discusses some technology choices we made. Section III describes the prototype implementation. Section IV presents the actual demonstrator that will be showcased. Finally, conclusion and future work are presented in Section V.
